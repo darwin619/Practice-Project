@@ -1,0 +1,34 @@
+.searchimagepreview-outer {
+  position: relative;
+
+  &:hover .searchimagepreview-img {
+    opacity: 0.6;
+  }
+
+  &:hover .searchimagepreview-addtolist {
+    visibility: visible;
+    transition: opacity 0.2s, ease 0.4s;
+    opacity: 1;
+  }
+}
+
+.searchimagepreview-img {
+  width: 400px;
+  height: auto;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.searchimagepreview-addtolist {
+  position: absolute;
+  top: 0%;
+  right: 7%;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 15px;
+  text-shadow: 3px 3px 4px black;
+  transition: opacity 0.62s, ease 1s;
+  z-index: 35;
+  cursor: pointer;
+}

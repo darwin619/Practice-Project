@@ -1,0 +1,11 @@
+.searchpage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    &__title {
+        font-style: italic;
+        text-decoration: underline;
+        font-size: 25px;
+    }
+}

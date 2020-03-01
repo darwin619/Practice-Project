@@ -1,0 +1,58 @@
+.homepage {
+  margin-top: 5px;
+
+  &__title {
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  &__card1,
+  &__card2,
+  &__card3 {
+    padding: 30px;
+    position: relative;
+  }
+
+  &__card-image {
+    width: 390px;
+    height: 350px;
+    object-fit: cover;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  &__card1-title,
+  &__card2-title,
+  &__card3-title {
+    position: absolute;
+    left: 10%;
+    bottom: 16%;
+    color: #fff;
+    font-size: 20px;
+    background: rgba(204, 204, 204, 0.5);
+    padding: 5px;
+  }
+
+  &__footer {
+      position:absolute;
+      bottom:0;
+      width:100%;
+      height:30px;   /* Height of the footer */
+      margin-top: auto;
+      font-size: 18px;
+      text-decoration: underline;
+      font-style: italic;
+  }
+}
