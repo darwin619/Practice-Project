@@ -38,4 +38,10 @@
   &__signout {
       padding: 15px;
   }
+
+  &__myimages, &__signin, &__signout {
+      a {
+          color: #111111;
+      }
+  }
 }

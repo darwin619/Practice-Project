@@ -8,6 +8,7 @@ import SearchPage from './Pages/SearchPage/SearchPage';
 import SearchImagePage from './Pages/SearchImagePage/SearchImagePage';
 import ListPage from './Pages/ListPage/ListPage';
 import SignIn from './Pages/SignIn/SignIn';
+import SignUp from './Pages/SignUp/SignUp';
 import { withRouter } from "react-router";
 
 
@@ -22,6 +23,7 @@ function App(props) {
       <Route exact path="/imagepage/:searchId" component={SearchImagePage} />
       <Route exact path="/mylist" component={ListPage} />
       <Route exact path="/signin" component={SignIn} />
+      <Route exact path="/signup" component={SignUp} />
     </div>
   );
 }
