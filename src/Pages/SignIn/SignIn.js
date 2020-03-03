@@ -3,7 +3,7 @@ import './SignIn.scss';
 import FormInput from '../../Components/FormInput/FormInput';
 import CustomButton from '../../Components/CustomButton/CustomButton';
 import {Link} from 'react-router-dom';
-import Background from "../../Bg.jpg";
+import Background from "../../Assets/bg.jpg";
 
 class SignIn extends React.Component {
   constructor() {

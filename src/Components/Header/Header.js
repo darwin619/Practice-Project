@@ -13,7 +13,7 @@ const Header = ({currentRoute}) => {
       <div className={`${currentRoute === '/signin' ? 'header__change' : null} header__options`}>
         <Link className="header__myimages" to="/mylist">My List</Link>
         <Link className="header__signin" to='/signin' >Sign In</Link>
-        <Link className="header__signout" to='/signout' >Sign out</Link>
+        <Link className="header__signout" to='/unassigned' >Sign out</Link>
       </div>
     </div>
   );
