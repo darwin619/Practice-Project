@@ -3,16 +3,17 @@ import "./Header.scss";
 import { Link } from "react-router-dom";
 import Nasa from '../../Assets/nasa.png';
 
-const Header = () => {
+const Header = ({currentRoute}) => {
+  console.log(currentRoute)
   return (
     <div className="header">
       <Link className="header__logo-container" to="/">
         <img src={Nasa} alt="logonasa" className="header__logo"/>
       </Link>
-      <div className="header__options">
+      <div className={`${currentRoute === '/signin' ? 'header__change' : null} header__options`}>
         <Link className="header__myimages" to="/mylist">My List</Link>
-        <Link className="header__signin">Sign In</Link>
-        <Link className="header__signout">Sign out</Link>
+        <Link className="header__signin" to='/signin' >Sign In</Link>
+        <Link className="header__signout" to='/signout' >Sign out</Link>
       </div>
     </div>
   );

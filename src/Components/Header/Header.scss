@@ -11,17 +11,21 @@
       width: 160px;
   }
 
-  &__options {
-      margin-left: auto;
-      margin-top: 15px;
+  &__change {
+      a {
+      color: #fff;
   }
+}
 
-  a {
+  &__options {
+     margin-left: auto;
+     margin-top: 15px;
      text-decoration: none;
      color: black;
      font-size: 20px;
      text-decoration: underline;
   }
+
 
   &__myimages {
       padding: 15px;
